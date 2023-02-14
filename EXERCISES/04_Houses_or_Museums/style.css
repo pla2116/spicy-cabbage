@@ -12,3 +12,8 @@ body {
 h1, h3 {
     text-align: center;
 }
+
+.left_column {
+    text-decoration: none;
+    color: #F4F4F4;
+}
