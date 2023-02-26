@@ -17,7 +17,7 @@ nav {
 
 ul.container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap;    
   justify-content: flex-end;
   
   list-style: none;
@@ -29,4 +29,5 @@ ul.container {
 .container a {
   text-decoration: none;
   color: #F4F4F4;
+  padding: 10px 60px 10px 10px;
 }
