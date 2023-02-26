@@ -18,7 +18,7 @@ nav {
 ul.container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: flex-end;
   
   list-style: none;
   background: tomato;
