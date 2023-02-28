@@ -5,7 +5,7 @@
 
   .navbar {
     display: flex;
-    background-color: white;
+    background-color: red;
     justify-content: space-between;
     align-items: center;
     padding-left: 100px;
@@ -53,5 +53,6 @@
   }
 
   .artist-name {
+    
     text-align: center;
   }
