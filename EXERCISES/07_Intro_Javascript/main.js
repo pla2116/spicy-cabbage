@@ -1,5 +1,7 @@
 console.log('this works');
 
 function sayHello() {
-    console.log("Hi")
+    console.log("Hi");
 }
+
+sayHello();
