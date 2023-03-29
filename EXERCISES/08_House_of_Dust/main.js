@@ -30,8 +30,7 @@ let array_two = [
     let paragraph = document.createElement('p')
   
     // add the text attribute
-    paragraph.textContent = `${elementFromArrayOne} $
-    {elementFromArrayTwo}`
+    paragraph.textContent = `${elementFromArrayOne} ${elementFromArrayTwo}`
 
     // add class attribute
     paragraph.classList.add('line')
