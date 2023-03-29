@@ -30,8 +30,10 @@ let array_two = [
     let paragraph = document.createElement('p')
   
     // add the text attribute
-    paragraph.textContent = '$ {elementFromArrayOne} $
-    {elementFromArrayTwo}'
+    paragraph.textContent = `${elementFromArrayOne} $
+    {elementFromArrayTwo}`
+
+    // elementFromArrayOne + " " + elementFromArrayTwo
 
     // append that paragraph to the div with a class of poem
     poem.appendChild(paragraph)
