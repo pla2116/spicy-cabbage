@@ -33,6 +33,9 @@ let array_two = [
     paragraph.textContent = `${elementFromArrayOne} $
     {elementFromArrayTwo}`
 
+    // add class attribute
+    paragraph.classList.add('line')
+
     // elementFromArrayOne + " " + elementFromArrayTwo
 
     // append that paragraph to the div with a class of poem
