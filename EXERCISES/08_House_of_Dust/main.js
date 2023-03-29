@@ -18,19 +18,23 @@ let array_two = [
   
   function renderPoem() {
     // select random element from array 01
-    let elementFromArrayOne = array_one[Math.floor(Math.random()*arrayName.length)];
+    let elementFromArrayOne = array_one[Math.floor(Math.random()*array_one.length)];
 
     // select a random element from array 2
-    let elementFromArrayTwo = array_two[Math.floor(Math.random()*arrayName.length)];
+    let elementFromArrayTwo = array_two[Math.floor(Math.random()*array_two.length)];
 
     // use querySelector to grab the div with a class of poem
     let poem = document.querySelector('.poem')
 
     // create a new element ... paragraph tag
-
+    let paragraph = document.createElement('p')
+  
     // add the text attribute
+    paragraph.textContent = '$ {elementFromArrayOne} $
+    {elementFromArrayTwo}'
 
     // append that paragraph to the div with a class of poem
+    poem.appendChild(paragraph)
   }
   
   let btn = document.querySelector("button");
