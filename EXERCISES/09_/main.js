@@ -37,3 +37,8 @@ function selectRandomElement(array){
     let randomizer = array(Math.floor(Math.random() * array.length))
     return randomizer; 
 }
+
+function generatePoem(){
+    // select a random element from each array
+    let randomMaterial = selectRandomElement(materials)
+}
