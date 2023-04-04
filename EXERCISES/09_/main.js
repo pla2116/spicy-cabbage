@@ -32,3 +32,8 @@ let thing = [
 // select a random element from each array
 // write a function generatePoem() render this randomized text to the page
 // have this function run on window load
+
+function selectRandomElement(array){
+    let randomizer = array(Math.floor(Math.random() * array.length))
+    return randomizer; 
+}
