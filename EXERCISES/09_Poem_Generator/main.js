@@ -44,5 +44,14 @@ function generatePoem(){
     let randomPlace = selectRandomElement(places);
     let randomPeople = selectRandomElement(people);
     let randomThing = selectRandomElement(thing);
+
+    // grab the container element on the web page
+    const container = document.querySelector('.container');
+
+    // create a new paragraph element
+    const paragraph = document.createElement('p');
+
+    // construct our sentence
+    paragraph.textContent = 
 }
 
