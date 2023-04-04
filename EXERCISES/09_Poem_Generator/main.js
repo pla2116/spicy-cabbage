@@ -40,5 +40,9 @@ function selectRandomElement(array){
 
 function generatePoem(){
     // select a random element from each array
-    let randomMaterial = selectRandomElement(materials)
+    let randomMaterial = selectRandomElement(materials);
+    let randomPlace = selectRandomElement(places);
+    let randomPeople = selectRandomElement(people);
+    let randomThing = selectRandomElement(thing);
 }
+
