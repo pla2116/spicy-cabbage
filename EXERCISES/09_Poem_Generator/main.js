@@ -34,19 +34,19 @@ let thing = [
 // have this function run on window load
 
 function selectRandomElement(array){
-    let randomizer = array(Math.floor(Math.random() * array.length))
+    let randomizer = array[Math.floor(Math.random() * array.length)]
     return randomizer; 
 }
 
-function generatePoem(){
+function generatePoem(n) {
     // select a random element from each array
     let randomMaterial = selectRandomElement(materials);
     let randomPlace = selectRandomElement(places);
     let randomPeople = selectRandomElement(people);
     let randomThing = selectRandomElement(thing);
 
-    for(let i=0; i < n; i++){
-      setTimeout{generatePoem, i * 500}
+    for(let i = 0; i < n; i++){
+      setTimeout(generatePoem, i * 1000)
     }
 
     // grab the container element on the web page
@@ -56,8 +56,14 @@ function generatePoem(){
     const paragraph = document.createElement('p');
 
     // construct our sentence
-    paragraph.textContent = `A house of ${randomMaterial} in a ${randomPlace} using ${randomThing} inhabted by ${randomPeople}`;
+    paragraph.textContent = `A house of ${randomMaterial} in a ${randomPlace} using ${randomThing} inhabited by ${randomPeople}`;
     
-    container.appendChild(paragraph)
-}
+    // append the paragraph to the page
+    container.appendChild(paragraph);
+  }
+
+  // call or invoke the function
+    window.addEventListener('load', function(){
+    generatePoem(8)
+  })
 
