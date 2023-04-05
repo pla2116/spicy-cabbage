@@ -56,7 +56,7 @@ function generatePoem(){
     const paragraph = document.createElement('p');
 
     // construct our sentence
-    paragraph.textContent = 'A house of ${randomMaterial} in a ${randomPlace} using ${randomThing} inhabted by ${randomPeople}';
+    paragraph.textContent = `A house of ${randomMaterial} in a ${randomPlace} using ${randomThing} inhabted by ${randomPeople}`;
     
     container.appendChild(paragraph)
 }
