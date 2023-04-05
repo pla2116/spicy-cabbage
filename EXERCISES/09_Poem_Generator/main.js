@@ -45,6 +45,10 @@ function generatePoem(){
     let randomPeople = selectRandomElement(people);
     let randomThing = selectRandomElement(thing);
 
+    for(let i=0; i < n; i++){
+      setTimeout{generatePoem, i * 500}
+    }
+
     // grab the container element on the web page
     const container = document.querySelector('.container');
 
@@ -52,6 +56,8 @@ function generatePoem(){
     const paragraph = document.createElement('p');
 
     // construct our sentence
-    paragraph.textContent = 
+    paragraph.textContent = 'A house of ${randomMaterial} in a ${randomPlace} using ${randomThing} inhabted by ${randomPeople}';
+    
+    container.appendChild(paragraph)
 }
 
