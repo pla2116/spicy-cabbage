@@ -49,7 +49,7 @@ const people = [
   //---------- SEARCH DATASET FOR SPECIFIC NAME
   function searchNames(event) {
     console.log(event.target)
-    let searchQuery = event.target.value;
+    let searchQuery = event.target.value.toLowerCase();
 
     const searchedName = people.filter(function(person){
       if(searchQuery){
