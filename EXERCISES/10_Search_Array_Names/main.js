@@ -47,15 +47,40 @@ const people = [
   renderNamesToPage(people);
   
   //---------- SEARCH DATASET FOR SPECIFIC NAME
-  function searchNames(e) {}
+  function searchNames(event) {
+    console.log(event.target)
+    let searchQuery = event.target.value;
+
+    const searchedName = people.filter(function(person){
+      if(searchQuery){
+        return person.name.includes(searchQuery)
+      }
+    })
+
+    displaySearched(searchedName)
+  }
   searchBar.addEventListener("keyup", searchNames);
   
   //---------- DISPLAY ONLY THE SPECIFIC NAME
-  function displaySearched(name) {}
-  
+  function displaySearched(names) {
+    // console.log('search value: ', names)
+    clearList()
+    // iterate ove rthe searched names
+    for(let i = 0; i < names.length; i++){
+      // create list item
+      let listItem = document.createElement('li')
+      // grab each name and add to the list item
+      listItem.textContent = names[i].name
+      // append the search results to the unordered list
+      ul.appendChild(listItem)
+    }
+  }
+    
   //---------- CLEAR LIST BEFORE RENDERING SPECIFIC NAME
-  function clearList() {}
-  
+  function clearList() {
+    ul.innerHTML = ""
+}
+   
   //---------- CLEAR FROM WITH BUTTON
   function clearSearchForm() {
     searchBar.reset()
