@@ -44,7 +44,23 @@ let cards = document.querySelectorAll(".card");
 function sortingFn(event) {
     if(event.target.classList.contains('filter-btn')){
         const filterValue = event.target.getATtribute('data-filter')
-        console.log(filterValue)
+        
+        if(filterValue === 'ascending'){
+            flowers.sort(function(a,b){
+                if(a.name < b.name){
+                    return -1
+                }
+                if(a.name > b.name){
+                    return 1
+                }
+                return 0
+            })
+
+            renderFlowersToPage(flowers)
+            
+        } else if (filterValue === 'descending'){
+            
+        }
     }
 }
 filterBtns.addEventListener("click", sortingFn);
