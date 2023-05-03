@@ -1,24 +1,31 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Spin Wheel</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Flowers</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<button id="spin">Spin</button>
-	<span class="arrow"></span>
-<div class="container">
-	<div class="one"></div>
-	<div class="two"></div>
-	<div class="three"></div>
-	<div class="four"></div>
-	<div class="five"></div>
-	<div class="six"></div>
-	<div class="seven"></div>
-	<div class="eight"></div>
-</div>
-<script src="main.js"></script>
+  <div class="container">
+    <!-- Filters -->
+    <div class="filters">
+      <h2>Filters</h2>
+      <button class="filter-btn" data-filter="yellow">YELLOW</button>
+      <button class="filter-btn" data-filter="pink">PINK</button>
+      <button class="filter-btn" data-filter="blue">BLUE</button>
+      <button class="filter-btn" data-filter="black">BLACK</button>
+      <button class="filter-btn" data-filter="green">GREEN</button>
+      <button class="filter-btn" data-filter="clear">NO COLOR</button>
+      <button class="filter-btn active" data-filter="all">All</button>
+    </div>
+    <!-- Results -->
+    <div class="list">
+      <h2>Perfumes</h2>
+      <ul></ul>
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
