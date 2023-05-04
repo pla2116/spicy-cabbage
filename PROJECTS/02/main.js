@@ -2,47 +2,52 @@ console.log('this works')
 
 //---------- DATASET
 
-const flowers = [
+const perfumes = [
   {
     name: "Mandorlo di Sicilia",
+    brand: "Acqua di Parma",
     color: "blue",
     image: "../../ASSETS/Perfumes/Acqua Di Parma_Mandorlo di Sicilia.jpg"
   }
 ];
 
-//---------- RENDER FLOWERS TO PAGE
+//---------- RENDER PERFUMES TO PAGE
 
 const ul = document.querySelector("ul");
 
-function renderFlowersToPage(results) {
+function renderPerfumesToPage(results) {
   // iterate over data set
   for(let i = 0; i < results.length; i++){
     // create the list item
     let listItem = document.createElement('li');
     // add a class to each item of the results
     listItem.classList.add('card', results[i].color) // red
-    // add flower name
+    // add perfume name
     let title = document.createElement('h3')
     title.textContent = results[i].name // Rose
-    // add flower color
+    // add perfume brand
+    let store = document.createElement('h4')
+    store.textContent = results[i].brand // Balenciaga
+    // add perfume color
     let color = document.createElement('p')
     color.classList.add(results[i].color)
     color.textContent = results[i].color
 
-    // add flower image
+    // add perfume image
     let image = document.createElement('img')
     image.setAttribute('src', results[i].image)
 
     ul.appendChild(listItem)
-    listItem.appendChild(title)
-    listItem.appendChild(color)
+    //listItem.appendChild(color)
     listItem.appendChild(image)
+    listItem.appendChild(title)
+    listItem.appendChild(store)
 
   }
 }
-renderFlowersToPage(flowers);
+renderPerfumesToPage(perfumes);
 
-//---------- FILTER FLOWERS BY COLOR
+//---------- FILTER PERFUMES BY COLOR
 
 let filterBtns = document.querySelector(".filters");
 let cards = document.querySelectorAll(".card");
