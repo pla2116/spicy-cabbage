@@ -62,7 +62,7 @@ const perfumes = [
   {
     name: "Super Cedar",
     brand: "Byredo",
-    color: "clear",
+    color: "green",
     image: "../../ASSETS/Perfumes/Byredo_Super Cedar.jpg.jpg"
   },
 
@@ -118,14 +118,14 @@ const perfumes = [
   {
     name: "Gabrielle Chanel Essence",
     brand: "Chanel",
-    color: "orange",
+    color: "yellow",
     image: "../../ASSETS/Perfumes/Chanel_Gabrielle Chanel Essence.jpg.jpg"
   },
 
   {
     name: "No. 5 Leau",
     brand: "Chanel",
-    color: "clear",
+    color: "yellow",
     image: "../../ASSETS/Perfumes/Chanel_No 5 Leau.jpg.jpg"
   },
 
@@ -237,7 +237,7 @@ const perfumes = [
   {
     name: "Guilty",
     brand: "Gucci",
-    color: "pink",
+    color: "clear",
     image: "../../ASSETS/Perfumes/Gucci_Guilty.jpg.jpg"
   },
 
@@ -272,7 +272,7 @@ const perfumes = [
   {
     name: "L'Eau d'Issey",
     brand: "Issey Miyake",
-    color: "clear",
+    color: "yellow",
     image: "../../ASSETS/Perfumes/Issey Miyake.jpg.jpg"
   },
 
@@ -300,7 +300,7 @@ const perfumes = [
   {
     name: "Star Magnolia",
     brand: "Jo Malone",
-    color: "pink",
+    color: "clear",
     image: "../../ASSETS/Perfumes/Jo Malone_Star Magnolia.jpg.jpg"
   },
 
@@ -335,7 +335,7 @@ const perfumes = [
   {
     name: "Love Don't Be Shy",
     brand: "Kilian",
-    color: "pink",
+    color: "orange",
     image: "../../ASSETS/Perfumes/Kilian_Love Dont Be Shy.jpg.jpg"
   },
 
@@ -363,14 +363,14 @@ const perfumes = [
   {
     name: "Jazz Club",
     brand: "Maison Margiela",
-    color: "yellow",
+    color: "orange",
     image: "../../ASSETS/Perfumes/Maison Margiela_Replica_Jazz Club.jpg.jpg"
   },
 
   {
     name: "Daisy Dream Daze",
     brand: "Marc Jacobs",
-    color: "pink",
+    color: "orange",
     image: "../../ASSETS/Perfumes/Marc Jacobs_Daisy Dream Daze.jpg.jpg"
   },
 
@@ -489,7 +489,7 @@ const perfumes = [
   {
     name: "Fox",
     brand: "Penhaligon",
-    color: "orange",
+    color: "pink",
     image: "../../ASSETS/Perfumes/Penhaligon_Fox.png.jpg"
   },
 
