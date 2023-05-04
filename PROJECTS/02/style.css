@@ -8,10 +8,11 @@
   body {
     height: 100vh;
     width: 100%;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Abhaya Libre', serif;
     font-size: 14px;
+    text-align: center;
   }
-  
+
   .filters {
     display: flex;
     flex-wrap: nowrap;    
@@ -33,23 +34,25 @@
   }
 
   .filter-btn {
-    color: black;
+    color: rgb(160, 160, 160);
     background-color: white;
     border-radius: 20px;
     width: 100px;
     height: 30px;
     text-align: center;
     border: none;
+    font-family: 'Quicksand', sans-serif;
   }
   
   .filter-btn.active {
-    color: white;
-    border-color: #16b5ef;
-    background: black;
+    color: black;
+    /* border-color: #16b5ef; */
+    /* background: none; */
+    text-decoration: underline;
   }
   
   .filter-btn:hover {
-    background: gray;
+    color: black
   }
 
   ul {
