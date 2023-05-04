@@ -329,7 +329,7 @@ const perfumes = [
     name: "Good Girl Gone Bad",
     brand: "Kilian",
     color: "clear",
-    image: "../../ASSETS/Perfumes/Kilian_Good Girl Gone Bad.jpg.jpg"
+    image: "../../ASSETS/Perfumes/Kilian_Good GIrl Gone Bad.jpg.jpg"
   },
 
   {
