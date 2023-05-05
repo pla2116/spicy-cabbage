@@ -1,0 +1,19 @@
+.navigation {
+    background: pink;
+    display: flex;
+    flex-wrap: nowrap;    
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+    margin: 0px;
+    line-height: 60px;
+  }
+
+li {
+    color: white;
+}
+
+body {
+    margin: 0px;
+}
